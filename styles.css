@@ -33,9 +33,17 @@ body {
 }
 
 /* COMMON */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-theme-basic);
+}
+
 h2 {
   font-family: 'Dancing Script', cursive;
-  color: var(--color-theme-basic);
   font-size: 3rem;
   font-weight: 400;
   margin-bottom: 4rem;
