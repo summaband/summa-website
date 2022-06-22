@@ -20,6 +20,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* TODO change gray bg => black */
   background-color: black;
+  background-image: url(./images/summa_bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   color: white;
   font-family: 'Roboto', sans-serif;
 }
@@ -27,6 +31,24 @@ body {
 /* COMMON */
 h2 {
   font-family: 'Dancing Script', cursive;
+  color: var(--color-theme-basic);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+p {
+  max-width: 800px;
+  font-family: 'Roboto';
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* NAVIGAATIO */
@@ -63,7 +85,7 @@ nav {
 /* MENU */
 
 .menu {
-  position: absolute;
+  position: fixed;
   display: none;
   flex-flow: column;
   height: 0;
@@ -124,7 +146,9 @@ nav {
 }
 
 .social a > img {
-  width: 3rem;
+  width: 200%;
+  max-width: 2.5rem;
+  min-width: 1.2rem;
   filter: brightness(1);
   transition: all 0.2s;
 }
@@ -141,6 +165,7 @@ nav {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
   padding-top: 60px;
   display: flex;
   flex-direction: column;
@@ -162,4 +187,54 @@ nav {
 .order-now:hover {
   color: var(--color-theme-hover);
   border-bottom: 2px solid var(--color-theme-hover);
+}
+
+/* STORY */
+
+.story-container {
+  background-color: black;
+}
+
+.story-container p {
+  text-align: center;
+}
+
+/* GIGS */
+
+.gigs-container li {
+  color: var(--color-theme-basic);
+}
+
+.gigs-container li p {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 6rem 2rem 5rem 2rem;
+}
+
+footer > * {
+  margin-bottom: 1rem;
+}
+
+footer .social {
+  margin-top: 0;
+}
+
+footer p {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+
+footer p.contact {
+  color: var(--color-theme-basic);
+  font-size: 1rem;
 }
