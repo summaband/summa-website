@@ -40,6 +40,7 @@ h4,
 h5,
 h6 {
   color: var(--color-theme-basic);
+  text-align: center;
 }
 
 h2 {
@@ -52,6 +53,7 @@ h2 {
 p {
   max-width: 800px;
   font-family: 'Roboto';
+  font-size: 1.1rem;
   line-height: 1.4rem;
 }
 
@@ -256,4 +258,77 @@ footer p {
 footer p.contact {
   color: var(--color-theme-basic);
   font-size: 1rem;
+}
+
+/* KOKOONPANO */
+
+.kokoonpano-hero {
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.kokoonpano-hero h2 {
+  font-size: 5rem;
+}
+
+.kokoonpano-hero p {
+  text-align: center;
+}
+
+/* KOKOONPANO PORTRAITS */
+
+.kokoonpano-portraits {
+  background-color: black;
+}
+
+.portrait-container {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 4rem 0;
+}
+
+.portrait-image {
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.portrait-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portrait-text {
+  max-width: 650px;
+  margin-left: 2rem;
+}
+
+.portrait-container h4 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: start;
+}
+
+@media only screen and (max-width: 800px) {
+  .kokoonpano-hero h2 {
+    font-size: 4rem;
+  }
+
+  .portrait-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portrait-text {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
 }
