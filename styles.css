@@ -229,6 +229,7 @@ nav {
 .gigs-container li p {
   color: white;
   margin-bottom: 1rem;
+  max-width: 600px;
 }
 
 /* FOOTER */
